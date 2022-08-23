@@ -1,9 +1,43 @@
-body{
-    display: flex;
-    //background: blue;
-    font-size: 14px;
+@import 'fonts';
+@import 'global';
+@import 'libs';
+@import 'reset';
+@import 'vars';
+
+.header{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        //подсветится что можно нажать
+        cursor: pointer;
+    }
 }
-button{
-    background-color: yellow;
+
+.logo{
+    margin: 0 auto;
 }
+
+.menu{
+    padding-left: 35px;
+    padding-right: 55px;
+    &__list{
+        display: flex;
+    }
+    //отступ будет только у второго item
+    &__list-item + .menu__list-item{
+        padding-left: 80px;
+    }
+    &__list-link{
+        @extend %title-font;
+        color: rgba(54, 56, 56, 0.9033);
+    }
+}
+
 
