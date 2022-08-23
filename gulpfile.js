@@ -6,15 +6,17 @@
 //6. шаг - npm i --save-dev browser-sync//для обновления html, css and js
 //7. шаг - npm install --save-dev gulp-uglify-es
 //8. шаг - npm i --save-dev jquery 
+//9. шаг - npm install --save-dev gulp-autoprefixer 
 
 //watch для автоматическо слежения за проектом(обновления изменений)
 //parallel чтобы ф-ции могли работать параллельно
 const { src, dest, watch, parallel } = require('gulp')
 
-const scss        = require('gulp-sass')(require('sass'))
-const concat      = require('gulp-concat')
-const browserSync = require('browser-sync').create();
-const uglify      = require('gulp-uglify-es').default()
+const scss         = require('gulp-sass')(require('sass'))
+const concat       = require('gulp-concat')
+const browserSync  = require('browser-sync').create()
+const uglify       = require('gulp-uglify-es').default
+const autoprefixer = require('gulp-autoprefixer')
 
 function browsersync() {
     browserSync.init({
@@ -29,9 +31,13 @@ function styles() {
         //очерёдность имеет значение!
         //compressed - сжимает созданный файл style.css
         //expanded - отображает в обычном виде
-        .pipe(scss, js({outputStyle: 'compressed'}))
+        .pipe(scss({outputStyle: 'compressed'}))
         //для переименования style.css в style.min.css
         .pipe(concat('style.min.css'))
+        .pipe(autoprefixer({
+			overrideBrowserslist: ['last 10 version'],
+            grid: true
+		}))
         //создаём папку css в парке app с файлом style.css
         .pipe(dest('app/css'))
         .pipe(browserSync.stream())       
@@ -51,9 +57,9 @@ function scripts() {
 function watching() {
     //следить за изменениями всех файлов расширения scss и запуска ф-цию styles
     watch(['app/scss/**/*.scss'], styles)
-    watch(['app/js/main.min.js'], scripts)
+    //следим за всеми файлами расширения js кроме main.min.js
+    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
     watch(['app/*.html']).on('change', browserSync.reload)
-    watch(['app/*.js']).on('change', browserSync.reload)
 }
 
 exports.styles = styles
