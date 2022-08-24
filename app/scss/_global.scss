@@ -17,6 +17,9 @@ body{//средние показатели шрифта на страницах
 	font-size: 16px;
 	line-height: 27px;
 	color: $default;
+	//стандартные настройки
+	overflow-x: hidden;
+	min-width: 320px;
 }
 
 .container{
