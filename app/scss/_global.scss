@@ -22,6 +22,12 @@ body{//средние показатели шрифта на страницах
 	min-width: 320px;
 }
 
+.container-main{
+    max-width: 1950px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
 .container{
 	max-width: 1140px;
 	margin: 0 auto;
@@ -36,6 +42,29 @@ body{//средние показатели шрифта на страницах
 }
 .footer {
 	flex: 0 0 auto;
+}
+//преображаем точки слайдера глобально для всех страниц
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li{
+		margin: 0 15px;
+	}
+	button{
+		background-color: $title;
+		border: none;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		padding: 0;
+		font-size: 0;
+	}
+	li.slick-active{
+		button{
+			background-color: #FFEF35;
+		}
+	}
 }
 
 

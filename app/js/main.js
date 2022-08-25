@@ -9,6 +9,8 @@ $(function() {
 
    $('.top__slider').slick({
     dots: true,
-    arrows: false
+    arrows: false,
+    fade: true,//прочитать!  ????
+    autoplay: true,//every 3 sec by default
    })
 })
