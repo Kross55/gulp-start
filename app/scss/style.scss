@@ -282,9 +282,11 @@
         padding-bottom: 70px;
         position: relative;
         &::after{
-            content: "";
+            content: '';
             background-image: url(../images/slider-background.png);
             width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 722px;
             position: absolute;
             top: 0;
