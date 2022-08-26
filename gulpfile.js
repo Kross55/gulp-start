@@ -10,6 +10,8 @@
 //10. шаг - npm i gulp-imagemin@7.1.0 --save-dev для сжатия картинок
 //11. шаг - npm i del@6.1.1 --save-dev 
 
+//14. шаг - npm install @fancyapps/fancybox --save-dev для видео
+
 //watch для автоматическо слежения за проектом(обновления изменений)
 //parallel чтобы ф-ции могли работать параллельно
 //series запускает функции в нужной нам последовательности
@@ -58,6 +60,7 @@ function scripts() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         'app/js/main.js',
     ])
     .pipe(concat('main.min.js'))

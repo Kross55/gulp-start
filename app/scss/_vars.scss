@@ -5,3 +5,11 @@ $title: #363838;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+
+//для видео и картинок, чтобы убрать ошибку у gulp
+@function max($numbers...){
+    @return m#{a}x(#{$numbers})
+}
+@function min($numbers...){
+    @return m#{a}x(#{$numbers})
+}
