@@ -495,3 +495,52 @@
         margin-top: 13px;
     }
 }
+
+/*галлерея*/
+//устанавливаем npm i --save-dev mixitup для галлереи
+.galery{
+    padding: 80px 0 90px;
+    &__buttons{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__btn{
+        font-weight: 600;
+        font-size: 14px;
+        color: #8F8D8D;
+        margin: 0 13px;
+        background-color: transparent;
+        padding: 6px 16px;
+        border: 1px solid #454647;
+        border-radius: 20px;
+        cursor: pointer;   
+    }
+    /*этот класс добавляет mixitup выбранной кнопке*/
+    .mixitup-control-active{
+        background-color: #FFEF35;
+        border: #FFEF35;
+        color: $title;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px 35px;
+    }
+    &__item:first-child{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    //для теста расположения ссылок
+    &__item{
+        background-color: green;
+    }
+    &__image{
+        object-fit: cover;
+        width: 100%;
+        //чтобы высота не была больше 1150px
+        max-height: 1150px;
+        //но маленькие растянулись на всю высоту
+        height: 100%;
+    }
+}

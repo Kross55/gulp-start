@@ -13,4 +13,11 @@ $(function() {
     fade: true,//прочитать!  ????
     autoplay: true,//every 3 sec by default
    })
+
+   const mixer = mixitup('.galery__inner', {
+      //по дефолту будет выбран класс этой кнопки
+      load: {
+         filter: '.living'
+      }
+   });
 })
