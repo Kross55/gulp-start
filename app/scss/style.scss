@@ -622,3 +622,67 @@
         line-height: 38px;
     }
 }
+
+///////////////////////////////page-2
+/*ABOUT*/
+.about{
+    &__prev{
+        background-image: url(../images/about-bg-top.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        text-align: center;
+        padding: 160px 0;
+        //когда margin отрицательное значение, то другие блоки наезжают на фон
+        margin-top: -53px;
+    }
+    &__prev-title{
+        @extend %title-font;
+        color: $title;
+        font-size: 60px;
+        line-height: 80px;
+    }
+    &__content{
+        padding: 130px 0 40px;
+    }
+    &__title{
+        text-align: left;
+        @extend %title-font;
+        color: $title;
+        font-size: 36px;
+        line-height: 60px;
+        max-width: 822px;
+        padding-bottom: 24px;
+        margin-bottom: 21px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 200px;
+            background: #6D7278;
+        }
+        
+    }
+    p{
+        margin-bottom: 30px;
+        padding-left: 285px;
+    }
+    &__popup{
+        background-image: url(../images/about-bg-video_post.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        //второй способ размещения фона и сонтента в центре
+        min-height: 414px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    &__popup-imgbtn{
+        margin: 0 auto;
+    }
+}
