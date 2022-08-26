@@ -23,15 +23,21 @@ body{//средние показатели шрифта на страницах
 }
 
 .container-main{
-    max-width: 1950px;
+    max-width: 1920px;
 	margin: 0 auto;
-	padding: 0 15px;
 }
 
 .container{
 	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+//для мониторов с разрешением больше 1920px
+.container-fluid{
+	min-width: 1920px;
+	margin: 0 auto;
+	padding: 0 10px;
+	
 }
 
 .header {
