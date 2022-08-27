@@ -583,6 +583,15 @@
         //но маленькие растянулись на всю высоту
         height: 100%;
     }
+    &.galery-page{
+        .galery__item:nth-child(8){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .galery__image{
+            max-height: 1175px;
+        }
+    }
 }
 
 /*Blog-box*/
