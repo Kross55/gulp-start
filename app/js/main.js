@@ -14,6 +14,13 @@ $(function() {
     autoplay: true,//every 3 sec by default
    })
 
+   $('.contacts-slider').slick({
+      slidesToShow: 10,
+      slidesToScroll:10,
+      dots: true,
+      arrows: false,
+     })
+
    const mixer = mixitup('.galery__inner', {
       //по дефолту будет выбран класс этой кнопки
       load: {

@@ -55,6 +55,10 @@
 }
 
 .footer{
+    //only that works
+    &.footer--padding-top{
+        padding-top: 102px;
+    }
     &-content{
         background: #DFDFDF;
         padding: 60px 0 80px;  
@@ -847,5 +851,39 @@
     }
     &__form-button{
         margin-left: 0;
+    }
+}
+
+.contacts-slider{
+    &__link{
+        margin-bottom: 20px;
+        position: relative;
+        &:hover{
+            .contacts-slider__title{
+                opacity: 1;
+            }
+        }
+    }
+    &__img{
+        // big picture protection 
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+    }
+    &__title{
+        transition: all .5s;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(#fff, .6);
+        @extend %title-font;
+        color: $title;
+        line-height: 22px;
+        //works till width: 1920px
+        padding: 64px 15% 64px 5%;
+        text-align: center;
+        opacity: 0;
     }
 }
