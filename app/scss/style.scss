@@ -257,6 +257,8 @@
 .breadcrumbs{
     background: rgba(#DFDFDF, .5);
     padding: 13px 0 14px;
+    position: relative;
+    z-index: 999;
     &__list{
         display: flex;
     }
@@ -781,4 +783,11 @@
     &__img{
         margin: 0 auto;
     }
+}
+
+
+/*CONTACTS*/
+.map{
+    margin-top: -53px;
+    margin-bottom: 50px;
 }
