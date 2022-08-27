@@ -701,6 +701,8 @@
         right: 0;
         background-image: url(../images/incpiration-bg.jpg);
         height: 414px;
+        background-repeat: no-repeat;
+        background-size: cover;
         z-index: -1;
     }
     &__inner{
@@ -755,5 +757,15 @@
         border-radius: 4px;
         background-color: $title;
         margin-top: -2px;
+    }
+}
+
+/*Partners*/
+.partners{
+    padding: 16px 0 60px;
+    &__item{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 68px;
     }
 }
