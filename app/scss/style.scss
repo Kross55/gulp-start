@@ -76,24 +76,6 @@
         max-width: 475px;
         margin-bottom: 16px;
     }
-    &__info-email{
-        font-weight: 600;
-        font-size: 14px;
-        color: $title;
-        margin-bottom: 22px;
-        padding-left: 30px;//место для конверта
-        display: inline-block;
-        position: relative;
-        &::before{
-            content: '';
-            background-image: url(../images/envelope.svg);
-            position: absolute;
-            top: 8px;
-            left: 0;
-            width: 16px;
-            height: 12px;
-        }
-    }
     &__form{
         display: flex;
     }
@@ -111,17 +93,6 @@
             line-height: 27px;
             color: #A1A1A1;    
         }
-    }
-    &__form-button{
-        min-width: 160px;
-        padding: 6px 12px;
-        border: none;
-        border-radius: 21px;
-        background-color: $title;
-        font-weight: 600;
-        color: #FFFFF0;
-        margin-left: 9px;
-        cursor: pointer;
     }
     &__social{
         width: 125px;
@@ -790,4 +761,48 @@
 .map{
     margin-top: -53px;
     margin-bottom: 50px;
+}
+
+.contacts{
+    &__title{
+        @extend %title-font;
+        color: $title;
+        font-size: 36px;
+        line-height: 60px;
+        padding-bottom: 25px;
+        margin-bottom: 40px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 200px;
+            background: #6D7278;
+        }
+    }
+    &__inner{
+        padding-left: 284px;
+    }
+    &__social{
+        display: flex;
+        margin-bottom: 19px;
+    }
+    &__social-item{
+        padding: 0 18px;
+    }
+    &__social-item:first-child{
+        padding-left: 2px;
+    }
+    &__text{
+        color: #A1A1A1;
+        margin-bottom: 10px;
+    }
+    &__phone{
+        color: inherit;
+    }
+    &__city{
+        margin-bottom: 16px;
+    }
 }
