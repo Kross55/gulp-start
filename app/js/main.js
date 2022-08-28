@@ -8,10 +8,10 @@ $(function() {
    })
 
    $('.top__slider').slick({
-    dots: true,
-    arrows: false,
-    fade: true,//прочитать!  ????
-    autoplay: true,//every 3 sec by default
+      dots: true,
+      arrows: false,
+      fade: true,//прочитать!  ????
+      autoplay: true,//every 3 sec by default
    })
 
    $('.contacts-slider').slick({
@@ -19,7 +19,13 @@ $(function() {
       slidesToScroll:10,
       dots: true,
       arrows: false,
-     })
+   })
+
+   //slider with custom buttons
+   $('.article-slider__box').slick({
+      prevArrow: '<button type="button" class="slick-prev"><img class="article-slider__arrow article-slider__arrowleft" src="images/arrow-slider-left.svg" alt="arrow left"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img class="article-slider__arrow article-slider__arrowright" src="images/arrow-slider-right.svg" alt="arrow right"></button>'
+   })
 
    const mixer = mixitup('.galery__inner', {
       //по дефолту будет выбран класс этой кнопки
