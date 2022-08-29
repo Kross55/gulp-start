@@ -18,6 +18,10 @@
         //подсветится что можно нажать
         cursor: pointer;
     }
+    //for adaptation max-width: 540px
+    &__btn-menu{
+        display: none;
+    }
 }
 
 .logo{
@@ -1273,6 +1277,8 @@
 .contacts__form--mb{
     margin-bottom: -40px;
 }
+
+@import 'media';
 
 
 
