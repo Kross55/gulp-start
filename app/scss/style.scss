@@ -240,11 +240,16 @@
     z-index: 10;
     &__list{
         display: flex;
+        overflow-x: auto;
+    }
+    //fixing problem with '/'
+    &__item{
+        padding-right: 8px;
+        position: relative;
     }
     &__item::after{
         content: '/';
-        margin-left: -4px;
-        margin-right: 4px;
+        position: absolute;
     }
     &__item:last-child::after{
         content: '';
