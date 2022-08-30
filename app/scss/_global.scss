@@ -31,7 +31,7 @@ body{//средние показатели шрифта на страницах
 }
 //для мониторов с разрешением больше 1920px
 .container-fluid{
-	min-width: 1920px;
+	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 10px;
 	

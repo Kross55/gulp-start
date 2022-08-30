@@ -287,13 +287,14 @@
     }
     &__slider-img{
         margin-left: -13%;
+        
         min-width: 703px;
         height: 815px;
         object-fit: cover;
     }
     &__slider-info{
         max-width: 635px;
-        margin-left: 25px;
+        margin-left: 15px;
     }
     &__slider-title{
         @extend %title-font;
@@ -315,6 +316,7 @@
     }
     &__slider-text{
         max-width: 585px;
+        padding-right: 10px;
     }
 }
 
@@ -343,7 +345,8 @@
     }
     &__text{
         max-width: 730px;
-        margin: 0 auto 30px;
+        margin: 0 auto;
+        padding-bottom: 30px;
     }
 }
 
