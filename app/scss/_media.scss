@@ -412,7 +412,18 @@
         &__blockquote{
             font-size: 18px;
             line-height: 25px;
-            padding: 27px 32px;
+            padding: 27px 64px;
+        }
+    }
+    .blog-two{
+        &__link span{
+            display: none;
+        }
+        &__link::before{
+            top: -12px;
+        }
+        &__slider-links{
+            padding: 25px 0 25px;
         }
     }
 }

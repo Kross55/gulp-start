@@ -1217,8 +1217,8 @@
         &::before{
             content: '';
             position: absolute;
-            top: 50%;
-            transition: translateY(-50%);
+            top: 12px;
+            
             width: 12px;
             height: 23px;
         }
@@ -1233,7 +1233,7 @@
     &__link-next{
         padding-right: 44px;
         text-align: right;
-        &::after{
+        &::before{
             right: 0;
             background-image: url(../images/blog-two-arrow-right.svg); 
         }
