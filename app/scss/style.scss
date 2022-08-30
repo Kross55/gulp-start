@@ -778,6 +778,9 @@
 .map{
     margin-top: -53px;
     margin-bottom: 50px;
+    iframe{
+        height: 578px;
+    }
 }
 
 .contacts{
@@ -901,6 +904,7 @@
         object-fit: cover;
     }
     &__title{
+        //to solve this problem - wrap img
         transition: all .5s;
         position: absolute;
         left: 0;
@@ -912,7 +916,7 @@
         color: $title;
         line-height: 22px;
         //works till width: 1920px
-        padding: 64px 15% 64px 5%;
+        padding: 64px 25% 64px 10%;
         text-align: center;
         opacity: 0;
     }

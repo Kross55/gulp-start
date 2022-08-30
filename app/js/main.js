@@ -29,6 +29,46 @@ $(function() {
       slidesToScroll:10,
       dots: true,
       arrows: false,
+      responsive: [
+         {
+            breakpoint: 1700,
+            settings: {
+              slidesToShow: 8,
+              slidesToScroll: 8,
+            }
+          },
+         {
+           breakpoint: 1510,
+           settings: {
+             slidesToShow: 6,
+             slidesToScroll: 6,
+           }
+         },
+         {
+           breakpoint: 1100,
+           settings: {
+             slidesToShow: 4,
+             slidesToScroll: 4
+           }
+         },
+         {
+           breakpoint: 730,
+           settings: {
+             slidesToShow: 3,
+             slidesToScroll: 3
+           }
+         },
+         {
+            breakpoint: 540,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }
+         // You can unslick at a given breakpoint now by adding:
+         // settings: "unslick"
+         // instead of a settings object
+       ]
    })
 
    //slider with custom buttons
