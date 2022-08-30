@@ -417,12 +417,12 @@
 /*создаём блок текста с отступами для фона*/
 .decor {
     margin-top: 30px;
-    padding: 175px 0 145px;
+    padding: 170px 0 155px;
     background-image: url(../images/decor-bg.jpg);
     /*растянется на всю ширину и не будет повторятся*/
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 616px;
+    max-height: 616px;
 
     &__title {
         max-width: 540px;
