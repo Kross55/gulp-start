@@ -1,7 +1,5 @@
 @import 'vars';
 
-@media (max-width: 1200px){}
-
 @media (max-width: 1340px){
     .top{
         &__inner {
@@ -56,6 +54,28 @@
             min-width: 500px;
             height: 100%;
         }
+    }
+}
+
+@media (max-width: 1040px){
+    .blog{
+        &__inner{
+        flex-wrap: wrap;
+        }
+        &__items{
+            max-width: 100%;
+        }
+        //works for img
+        &__item-img{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .aside{
+        width: 100%;
+        margin-left: 0;
+        order: -1;
+        margin-bottom: 30px;
     }
 }
 
@@ -387,6 +407,13 @@
     }
     .slick-dots li{
         margin: 0 5px;
+    }
+    .blog{
+        &__blockquote{
+            font-size: 18px;
+            line-height: 25px;
+            padding: 27px 32px;
+        }
     }
 }
 
