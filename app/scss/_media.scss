@@ -27,7 +27,6 @@
     .new-collection{
         padding-top: 0;
     }
-
     .collection{
         grid-template-columns: repeat(3, 1fr);
         &__image{
@@ -81,6 +80,15 @@
             margin-right: 25px;
             min-width: 400px;
             height: 100%;
+        }
+    }
+    .galery{
+        &__items{
+            grid-gap: 10px;
+        }
+        &__btn{
+            margin: 0;
+            padding: 6px 10px;
         }
     }
 }
@@ -139,6 +147,14 @@
     .works-path__item--measuring{
         margin-left: 100px;
     }
+    .galery{
+        &__buttons{
+            display: grid;
+        }
+        &__btn{
+            margin-bottom: 10px;
+        }
+    }
 }
 
 @media (max-width: 700px){
@@ -185,6 +201,20 @@
         &__item--measuring{
             padding-top: 0;
             padding-bottom: 30px;
+        }
+    }
+    .blog-box{
+        &__items{
+            display: block;
+        }__item{
+            padding-bottom: 20px;
+        }
+        &
+        &__link{
+            display: block;
+        }
+        &__img{
+            width: 100%;
         }
     }
 }
@@ -260,6 +290,26 @@
     .decor__title{
         font-size: 28px;
         line-height: 36px;
+    }
+    .galery{
+        &__items{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item:first-child{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+    .blog-box{
+        &__title {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    
+        &__item-title {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 }
 
