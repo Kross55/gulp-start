@@ -738,7 +738,8 @@
     &__text{
         margin-bottom: 30px;
     }
-    &__item{
+    &__item__text,
+    &__num{
         @extend %title-font;
         color: $title;
         line-height: 23px;
