@@ -425,6 +425,20 @@
         &__slider-links{
             padding: 25px 0 25px;
         }
+        &__comments-item{
+            flex-wrap: wrap;
+        }
+        &__comments-photo{
+            width: 45px;
+            height: 45px;
+        }
+        &__comment-date,
+        &__comment-name{
+            margin-left: 55px;
+        }
+        &__comment-top{
+            margin-top: -46px ;
+        }
     }
 }
 
